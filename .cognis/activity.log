@@ -2,3 +2,4 @@
 2024-06-26T09:27:57  perf(docs): lower memory on big inputs
 2024-07-07T16:44:04  ci(core): add a regression fixture
 2024-08-06T11:01:11  fix: the cake is a lie, but the bug was real
+2024-08-17T18:18:18  docs(ci): handle empty and malformed input
