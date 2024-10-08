@@ -5,3 +5,4 @@
 2024-08-17T18:18:18  docs(ci): handle empty and malformed input
 2024-09-16T13:35:25  test(fixtures): add usage examples to help
 2024-09-27T08:52:32  docs: expand examples
+2024-10-08T15:09:39  feat(config): normalize unicode before matching
