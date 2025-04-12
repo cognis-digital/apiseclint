@@ -15,3 +15,4 @@
 2025-02-19T16:08:28  style(report): add a --quiet mode
 2025-03-21T11:25:35  refactor: tidy internals
 2025-04-01T18:42:42  fix(format): make timestamps timezone-aware
+2025-04-12T13:59:49  refactor(engine): assert exit codes in tests
