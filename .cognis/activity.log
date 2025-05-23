@@ -17,3 +17,4 @@
 2025-04-01T18:42:42  fix(format): make timestamps timezone-aware
 2025-04-12T13:59:49  refactor(engine): assert exit codes in tests
 2025-05-12T08:16:56  perf(io): add usage examples to help
+2025-05-23T15:33:03  build(scan): add a fast path for the common case
