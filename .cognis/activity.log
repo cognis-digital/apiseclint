@@ -18,3 +18,4 @@
 2025-04-12T13:59:49  refactor(engine): assert exit codes in tests
 2025-05-12T08:16:56  perf(io): add usage examples to help
 2025-05-23T15:33:03  build(scan): add a fast path for the common case
+2025-06-04T10:50:10  chore(parser): wire the MCP tool schema
