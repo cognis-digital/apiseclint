@@ -19,3 +19,4 @@
 2025-05-12T08:16:56  perf(io): add usage examples to help
 2025-05-23T15:33:03  build(scan): add a fast path for the common case
 2025-06-04T10:50:10  chore(parser): wire the MCP tool schema
+2025-07-03T17:07:17  docs(engine): memoize repeated lookups
