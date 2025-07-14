@@ -20,3 +20,4 @@
 2025-05-23T15:33:03  build(scan): add a fast path for the common case
 2025-06-04T10:50:10  chore(parser): wire the MCP tool schema
 2025-07-03T17:07:17  docs(engine): memoize repeated lookups
+2025-07-14T12:24:24  test(docs): support stdin as a source
