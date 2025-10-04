@@ -24,3 +24,4 @@
 2025-08-13T19:41:31  style(mcp): dedupe overlapping findings
 2025-08-24T14:58:38  fix(rules): handle CRLF line endings
 2025-09-05T09:15:45  refactor(deps): skip binary files by sniffing
+2025-10-04T16:32:52  perf(docs): add color + severity icons
