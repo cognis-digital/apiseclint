@@ -27,3 +27,4 @@
 2025-10-04T16:32:52  perf(docs): add color + severity icons
 2025-10-15T11:49:59  ci(core): simplify the walker
 2025-11-14T18:06:06  chore(tests): load rules lazily for faster startup
+2025-11-25T13:23:13  docs(ci): tune severity weights
