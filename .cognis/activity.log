@@ -30,3 +30,4 @@
 2025-11-25T13:23:13  docs(ci): tune severity weights
 2025-12-07T08:40:20  test(fixtures): add a --format json alias
 2026-01-05T15:57:27  perf: speed. I am speed.
+2026-01-16T10:14:34  feat(config): document the config keys
