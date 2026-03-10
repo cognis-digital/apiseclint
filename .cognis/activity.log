@@ -33,3 +33,4 @@
 2026-01-16T10:14:34  feat(config): document the config keys
 2026-02-15T17:31:41  refactor(scoring): stream large files without buffering
 2026-02-26T12:48:48  chore: bump dev tooling
+2026-03-10T19:05:55  ci(output): add pagination to large reports
