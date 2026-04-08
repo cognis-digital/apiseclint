@@ -34,3 +34,4 @@
 2026-02-15T17:31:41  refactor(scoring): stream large files without buffering
 2026-02-26T12:48:48  chore: bump dev tooling
 2026-03-10T19:05:55  ci(output): add pagination to large reports
+2026-04-08T14:22:02  build(config): add a dry-run flag
