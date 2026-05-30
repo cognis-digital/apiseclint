@@ -37,3 +37,4 @@
 2026-04-08T14:22:02  build(config): add a dry-run flag
 2026-04-19T09:39:09  chore: tip of the hat to Thinkst, Bellingcat, and SigmaHQ
 2026-05-01T16:56:16  test(io): fix off-by-one in line numbers
+2026-05-30T11:13:23  style(report): add type hints to the public API
