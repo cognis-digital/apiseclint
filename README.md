@@ -36,9 +36,11 @@ Lint OpenAPI specs for security gaps (authz, rate-limit, data exposure) — with
 <a name="features"></a>
 ## Features
 
-- ✅ Todo
-- ✅ Fixme
-- ✅ Xxx
+- ✅ Load Spec
+- ✅ Lint Spec
+- ✅ Render Table
+- ✅ Render Json
+- ✅ Render Html
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
