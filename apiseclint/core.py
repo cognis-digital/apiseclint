@@ -11,7 +11,7 @@ import html as _html
 import json
 import re
 from dataclasses import dataclass, field, asdict
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Tuple
 
 # ---------------------------------------------------------------------------
 # Data model

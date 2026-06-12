@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-apiseclint
+pip install "git+https://github.com/cognis-digital/apiseclint.git"
 apiseclint scan .            # → prioritized findings in seconds
 ```
 
@@ -50,7 +50,7 @@ Lint OpenAPI specs for security gaps (authz, rate-limit, data exposure) — with
 ## Quick start
 
 ```bash
-pip install cognis-apiseclint
+pip install "git+https://github.com/cognis-digital/apiseclint.git"
 apiseclint --version
 apiseclint scan .                       # scan current project
 apiseclint scan . --format json         # machine-readable
