@@ -20,6 +20,33 @@ pip install cognis-apiseclint
 apiseclint scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+`apiseclint` lints an OpenAPI spec for API security gaps (authn/authz, rate limiting, data exposure).
+
+1. **Install** (Python 3.10+):
+   ```bash
+   pip install -e .            # or: pipx install apiseclint
+   ```
+2. **Lint a spec** (human-readable table):
+   ```bash
+   apiseclint lint openapi.yaml
+   ```
+3. **Write a report** in JSON or HTML to a file:
+   ```bash
+   apiseclint lint openapi.yaml --format html -o api-security-report.html
+   apiseclint lint openapi.json --format json -o report.json
+   ```
+4. **Read the output** as JSON for piping / dashboards:
+   ```bash
+   apiseclint lint openapi.yaml --format json | jq '.findings'
+   ```
+5. **Gate CI** — exit `1` when findings are present, `0` when clean, `2` on read/parse error. Use `--exit-zero` to report without failing the build:
+   ```yaml
+   - run: pip install -e . && apiseclint lint openapi.yaml   # non-zero fails the job
+   ```
+
+
 ## Contents
 
 - [Why apiseclint?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
