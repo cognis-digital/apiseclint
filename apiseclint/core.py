@@ -87,13 +87,26 @@ SENSITIVE_FIELD_RE = re.compile(
 
 def load_spec(text: str) -> Dict[str, Any]:
     """Load an OpenAPI spec from text. Tries JSON first, then a minimal YAML
-    parser sufficient for typical flow-style-free specs."""
+    parser sufficient for typical flow-style-free specs.
+
+    Raises ValueError if the text is empty or cannot be parsed as a mapping.
+    """
+    if not isinstance(text, str):
+        raise TypeError(f"spec text must be a str, got {type(text).__name__!r}")
     text = text.lstrip("﻿")
     stripped = text.lstrip()
+    if not stripped:
+        raise ValueError("spec is empty — no content to parse")
     if stripped.startswith("{"):
-        return json.loads(text)
+        result = json.loads(text)
+        if not isinstance(result, dict):
+            raise ValueError("spec root is not a mapping/object")
+        return result
     try:
-        return json.loads(text)
+        result = json.loads(text)
+        if not isinstance(result, dict):
+            raise ValueError("spec root is not a mapping/object")
+        return result
     except json.JSONDecodeError:
         pass
     return _parse_min_yaml(text)
@@ -501,6 +514,11 @@ RULES = [
 # ---------------------------------------------------------------------------
 
 def lint_spec(spec: Dict[str, Any], source: str = "<spec>") -> LintReport:
+    if not isinstance(spec, dict):
+        raise TypeError(
+            f"lint_spec requires a dict, got {type(spec).__name__!r}. "
+            "Use load_spec() to parse a spec file first."
+        )
     info = spec.get("info") or {}
     report = LintReport(
         source=source,
