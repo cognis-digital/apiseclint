@@ -34,3 +34,6 @@ apiseclint = "apiseclint.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["apiseclint"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
