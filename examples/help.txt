@@ -1,0 +1,14 @@
+$ apiseclint-emit --help
+
+usage: apiseclint [-h] [--version] {lint} ...
+
+Lint an OpenAPI spec for API security gaps (authn/authz, rate limiting, data
+exposure).
+
+positional arguments:
+  {lint}
+    lint      Lint an OpenAPI spec file.
+
+options:
+  -h, --help  show this help message and exit
+  --version   show program's version number and exit

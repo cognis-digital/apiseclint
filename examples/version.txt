@@ -1,0 +1,3 @@
+$ apiseclint-emit --version
+
+apiseclint 0.1.0

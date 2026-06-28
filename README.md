@@ -20,6 +20,37 @@ pip install cognis-apiseclint
 apiseclint scan .            # → prioritized findings in seconds
 ```
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+Real, reproducible output from the tool — runs offline:
+
+```console
+$ apiseclint-emit --version
+apiseclint 0.1.0
+```
+
+```console
+$ apiseclint-emit --help
+usage: apiseclint [-h] [--version] {lint} ...
+
+Lint an OpenAPI spec for API security gaps (authn/authz, rate limiting, data
+exposure).
+
+positional arguments:
+  {lint}
+    lint      Lint an OpenAPI spec file.
+
+options:
+  -h, --help  show this help message and exit
+  --version   show program's version number and exit
+```
+
+> Blocks above are real `apiseclint` output — reproduce them from a clone.
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 `apiseclint` lints an OpenAPI spec for API security gaps (authn/authz, rate limiting, data exposure).
